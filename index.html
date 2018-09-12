@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div>
+		<h1 id="title">Survey Form</h1>
+	</div>
+	<div class="inmargin">
+		<div>
+			<p id="description">Let us know we can improve freeCodeCamp</p>
+		</div>
+
+		<form id="survey-form">
+			<div style="overflow-x:auto;">
+			<table>
+				<tr>
+					<td class="rightali"><label id="name-label" class="alignleft">* Name: </label></td>
+					<td><input id="name" type="name" name="name" placeholder="Name" required></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali"><label id="email-label">* Email: </label></td>
+					<td><input id="email" type="email" name="email" placeholder="Insert email" required></td>
+				</tr>
+				<tr>
+					<td class="rightali"><label id="number-label">* Age: </label></td>
+					<td><input id="number" type="number" name="age" min="1" max="110" placeholder="Age in numbers" required></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali"><label>Which option best describes your current role?</label></td>
+					<td><select name="recommend" id="dropdown" placeholder="Select an option">
+						<option value="" disabled selected>Select your option</option>
+						<option value="Student">Student</option>
+						<option value="ftimej">Full time Job</option>
+						<option value="ftimel">Full time leaner</option>
+						<option value="prefernot">Prefer not to say</option>
+						<option value="other">Other</option>					
+					</select></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali">* How likely is that you would recommend </br>
+				FreeCodeCamp to a friend?</td>
+					<td><input type="radio" name="likely" value="1" required>
+					<label id="number-label">Definitely</label></td>
+				</tr>
+				<tr class="basicmargin">
+					<td></td>
+					<td><input type="radio" name="likely" value="2">
+						<label id="number-label">Maybe</label></td>
+				</tr>
+				<tr class="basicmargin">
+					<td></td>
+					<td><input type="radio" name="likely" value="3">
+						<label id="number-label">Not sure</label></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali"><label>What do you like most in FCC? :</label></td>
+					<td><select name="like_most" id="dropdown" placeholder="Select an option">
+					<option value="" disabled selected>Select your option</option>
+					<option value="Challenge">Challenges</option>
+					<option value="projects">Projects</option>
+					<option value="community">Community</option>
+					<option value="open">Open Source</option>
+					</select></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali">Things that should be improved in the future </br>(Check all that apply):
+					</td>	
+					<td><input type="checkbox" value="front">
+						<label>Front-end Projects</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="back">
+						<label>Back-end Projects</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="data">
+						<label>Data Visualization</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="challen">
+						<label>Challenges</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="open">
+						<label>Open Source Community</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="gitter">
+						<label>Gitter help rooms</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="videos">
+						<label>Videos</label>/td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="city">
+						<label>City Meetups</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="wiki">
+						<label>Wiki</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="Forum">
+						<label>Forum</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" value="additional">
+						<label>Additional Courses</label></td>
+				</tr>
+				<tr class="basicmargin">
+					<td class="rightali"><label>Any Comment of Suggestions? </label>	</td>
+					<td class="basicmargin"><textarea rows="4" cols="50" placeholder="Enter text here..."></textarea></td>
+				</tr>
+			</table>
+			</div>
+			<div class="basicmargin">
+				<input class="sbutton"type="submit" value="Submit" id="submit"></input>
+			</div>
+
+		</form>
+	</div>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+		
+	</script>
+</body>
+</html>
